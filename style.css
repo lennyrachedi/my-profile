@@ -1,0 +1,129 @@
+/* ---------- Base ---------- */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #3b1a1a;
+  background-color: #fdf9e6;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* ---------- Classes réutilisables ---------- */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.img-circle {
+  width: 160px;
+  border-radius: 50%;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.link-pink {
+  color: #f4a6a6;
+  font-weight: 600;
+}
+
+.link-pink:hover {
+  color: white;
+}
+
+/* ---------- En-tête ---------- */
+.banner {
+  background-color: #7a0000;
+  color: #f8d3cc;
+  text-align: center;
+  padding: 70px 0 90px;
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin: 25px 0 15px;
+}
+
+.banner h1 em {
+  color: #f4a6a6;
+}
+
+.banner-text {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 15px;
+}
+
+/* ---------- Cards passions ---------- */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  margin-top: -40px;
+  margin-bottom: 60px;
+}
+
+.card-white {
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-white h2 {
+  color: #7a0000;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+/* ---------- Footer et réseaux sociaux ---------- */
+.footer {
+  background-color: #3d1214;
+  color: #f8d3cc;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h2 {
+  margin-top: 0;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 0 12px;
+}
+
+.list-inline a {
+  color: #f4a6a6;
+  font-weight: 600;
+}
+
+.list-inline a:hover {
+  color: white;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .banner h1 {
+    font-size: 36px;
+  }
+}
